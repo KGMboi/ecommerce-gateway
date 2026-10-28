@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce-gateway",
+  "version": "0.1.0",
+  "description": "Composite API que unifica catálogo, inventario y tipo de cambio",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "license": "ISC"
+}
