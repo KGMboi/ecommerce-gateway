@@ -1,10 +1,17 @@
 {
   "name": "ecommerce-gateway",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Composite API que unifica catálogo, inventario y tipo de cambio",
   "type": "module",
   "engines": {
     "node": ">=18"
+  },
+  "scripts": {
+    "start": "node scripts/start-all.js",
+    "start:products": "node src/services/products/server.js",
+    "start:inventory": "node src/services/inventory/server.js",
+    "start:gateway": "node src/gateway/server.js",
+    "test": "node --test"
   },
   "dependencies": {
     "express": "^5.1.0"
