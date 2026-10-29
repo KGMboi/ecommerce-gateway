@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Gateway | Detalle de producto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>E-Commerce Gateway</h1>
+    <p class="subtitle">Detalle de producto con una sola petición a la Composite API.</p>
+
+    <form id="search-form">
+      <label for="product-id">Producto</label>
+      <select id="product-id">
+        <option value="P-101">P-101 Laptop Gamer XYZ</option>
+        <option value="P-102">P-102 Mouse Inalámbrico Pro</option>
+        <option value="P-103">P-103 Monitor 27" 4K</option>
+        <option value="P-104">P-104 Teclado Mecánico RGB</option>
+        <option value="P-105">P-105 Audífonos Studio</option>
+        <option value="P-999">P-999 (no existe)</option>
+      </select>
+      <button type="submit">Consultar resumen</button>
+    </form>
+
+    <section id="result" hidden>
+      <h2 id="result-title"></h2>
+      <p id="result-status"></p>
+      <dl id="result-fields"></dl>
+      <p id="result-warnings"></p>
+      <p id="result-time"></p>
+      <h3>Respuesta JSON</h3>
+      <pre id="result-json"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
